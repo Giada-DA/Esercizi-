@@ -1,12 +1,14 @@
+import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
 
 class MicroBlog {
     public String truncate(String input) {
-        byte[] bytes = input.getBytes(StandardCharsets.UTF_8);
-        if(bytes <= 5){
-            System.out.println("Ok");
-        }else if(bytes > 5)
-            System.out.println(input.substring(5));
+        int count = input.codePointCount(0, input.length());
+        return input.substring(0, input.offsetByCodePoints(0, Math.min(count, 5)));
     }
+    public String truncate2(String input) {
+        return input.length() > 5 ? input.substring(0,input.offsetByCodePoints(0,5)) : input;
+    }
+
 }
-fuslonfx24.com giulia

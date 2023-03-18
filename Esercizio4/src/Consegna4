@@ -1,0 +1,30 @@
+Istruzioni
+
+Hai identificato una lacuna nel mercato dei social media per post molto molto brevi.
+Ora che Twitter consente post di 280 caratteri, le persone che desiderano aggiornamenti rapidi sui social media non vengono servite.
+Decidi di creare la tua rete di social media.
+
+Per rendere il tuo prodotto degno di nota, lo rendi estremo e consenti solo post di 5 o meno caratteri.
+Tutti i post di più di 5 caratteri devono essere troncati a 5.
+
+Per consentire ai tuoi utenti di esprimersi completamente, consenti Emoji e altri Unicode.
+
+L'attività è troncare le stringhe di input a 5 caratteri.
+
+Codifiche di testo
+Il testo memorizzato digitalmente deve essere convertito in una serie di byte.
+Ci sono 3 modi per mappare i caratteri ai byte di uso comune.
+
+ASCII può codificare i caratteri della lingua inglese. Tutti i caratteri sono lunghi esattamente 1 byte.
+UTF-8 è una codifica di testo Unicode. I caratteri occupano da 1 a 4 byte.
+UTF-16 è una codifica di testo Unicode. I caratteri sono lunghi 2 o 4 byte.
+UTF-8 e UTF-16 sono entrambe codifiche Unicode, il che significa che sono in grado di rappresentare una vasta gamma di caratteri tra cui:
+-Testo nella maggior parte delle lingue e scritture del mondo
+-Testo storico
+-Emoticon
+
+UTF-8 e UTF-16 sono entrambe codifiche di lunghezza variabile, il che significa che caratteri diversi occupano diverse quantità di spazio.
+
+Considera la lettera "a" e l'emoji "😛". In UTF-16 la lettera occupa 2 byte ma l'emoji occupa 4 byte.
+
+Il trucco di questo esercizio consiste nell'utilizzare le API progettate attorno ai caratteri Unicode (codepoint) anziché alle codeunit Unicode.

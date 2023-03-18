@@ -1,0 +1,37 @@
+Istruzioni
+
+In questo esercizio scriverai del codice per aiutarti a cucinare una brillante lasagna dal tuo libro di cucina preferito.
+
+Hai quattro compiti, tutti legati al tempo trascorso a cucinare le lasagne.
+
+---------------------------------.1.---------------------------------
+Definire il tempo di cottura previsto in minuti
+Definisci il expectedMinutesInOven()metodo che non accetta parametri e restituisce quanti minuti devono essere le lasagne nel forno. Secondo il libro di cucina, il tempo di cottura previsto in minuti è 40:
+
+Lasagna lasagna = new Lasagna();
+lasagna.expectedMinutesInOven();
+// => 40
+
+---------------------------------.2.---------------------------------
+Calcolare il tempo rimanente del forno in minuti
+Definire il remainingMinutesInOven()metodo che prende i minuti effettivi in ​​cui la lasagna è stata nel forno come parametro e restituisce quanti minuti la lasagna deve ancora rimanere nel forno, in base al tempo di cottura previsto in minuti dall'attività precedente.
+
+Lasagna lasagna = new Lasagna();
+lasagna.remainingMinutesInOven(30);
+// => 10
+
+---------------------------------.3.---------------------------------
+Calcola il tempo di preparazione in minuti
+Definisci il preparationTimeInMinutes()metodo che prende come parametro il numero di strati che hai aggiunto alla lasagna e restituisce quanti minuti hai impiegato per preparare la lasagna, supponendo che ogni strato richieda 2 minuti per la preparazione.
+
+Lasagna lasagna = new Lasagna();
+lasagna.preparationTimeInMinutes(2);
+// => 4
+
+---------------------------------.4.---------------------------------
+Calcolare il tempo di lavoro totale in minuti
+Definisci il totalTimeInMinutes()metodo che accetta due parametri: il primo parametro è il numero di strati che hai aggiunto alla lasagna, e il secondo parametro è il numero di minuti in cui la lasagna è rimasta nel forno. La funzione dovrebbe restituire quanti minuti in totale hai lavorato alla cottura della lasagna, che è la somma del tempo di preparazione in minuti, e il tempo in minuti che la lasagna ha trascorso nel forno al momento.
+
+Lasagna lasagna = new Lasagna();
+lasagna.totalTimeInMinutes(3, 20);
+// => 26

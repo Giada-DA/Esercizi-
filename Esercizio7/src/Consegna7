@@ -1,0 +1,74 @@
+Istruzioni
+
+In questo esercizio simuleremo il primo turno di una partita di Blackjack.
+Riceverai due carte e potrai vedere la carta scoperta del banco.
+Tutte le carte sono rappresentate utilizzando una stringa come "asso", "re", "tre", "due", ecc.
+I valori di ogni carta sono:
+
+carta    valore       carta    valore
+asso	   11	      otto	     8
+due	       2	      nove	     9
+tre	       3	      dieci	     10
+quattro	   4	      Jack	     10
+cinque	   5	      regina     10
+sei	       6	      re	     10
+Sette	   7	      altro	     0
+Nota : Comunemente, gli assi possono assumere il valore di 1 o 11 ma per semplicità supponiamo che possano assumere solo il valore di 11.
+
+A seconda delle tue due carte e della carta del mazziere, c'è una strategia per il primo turno di gioco, in cui hai le seguenti opzioni:
+
+- Stand (S)
+- Hit   (H)
+- Split (P)
+- Automatically win (W)
+Sebbene non sia ancora ottimale, seguirai la strategia che il tuo amico Alex ha sviluppato, che è la seguente:
+
+---Categoria: Mano grande
+-Se hai una coppia di assi devi sempre dividerli.
+-Se hai un Blackjack (due carte che sommano un valore di 21) e il banco non ha un asso, una figura o un dieci allora vinci automaticamente. Se il mazziere ha una di queste carte allora dovrai stare in piedi e aspettare che venga rivelata l'altra carta.
+
+---Categoria: Mano piccola
+-Se la somma delle tue carte è pari o superiore a 17, dovresti sempre stare.
+-Se la somma delle tue carte è pari o inferiore a 11, dovresti sempre chiedere carta.
+-Se le tue carte raggiungono un valore compreso nell'intervallo [12, 16] dovresti sempre stare a meno che il banco non abbia un 7 o più, nel qual caso dovresti sempre chiedere carta.
+
+La logica generale è già stata implementata.
+Hai quattro compiti:
+
+---------------------------------.1.---------------------------------
+Calcola il punteggio di una data carta.
+Implementa una funzione per calcolare il valore numerico di una carta dato il suo nome usando i condizionali.
+
+parseCard("ace")
+// returns 11
+
+---------------------------------.2.---------------------------------
+Determina se due carte compongono un Blackjack.
+Implementa una funzione che restituisce truese due carte formano un Blackjack, falsealtrimenti.
+
+isBlackjack("queen", "ace")
+// returns true
+
+---------------------------------.3.---------------------------------
+Implementare la logica decisionale per i punteggi delle mani superiori a 20 punti.
+Implementa una funzione che restituisca la rappresentazione di stringa di una decisione date le tue carte.
+Questa funzione viene chiamata solo se handScore è maggiore di 20.
+Riceverà 2 argomenti: isBlackJack e dealerScore.
+Dovrebbe implementare i punti elenco nella categoria "Mano grande" sopra.
+
+isBlackJack = true
+dealerScore = 7
+largeHand(isBlackJack, dealerScore)
+// returns "W"
+
+---------------------------------.4.---------------------------------
+Implementare la logica decisionale per i punteggi delle mani con meno di 21 punti.
+Implementa una funzione che restituisca la rappresentazione di stringa di una decisione date le tue carte.
+Questa funzione viene chiamata solo se handScoreè minore di 21.
+Riceverà 2 argomenti: handScore e dealerScore.
+Dovrebbe implementare i punti elenco nella categoria "Piccola mano" sopra.
+
+handScore = 15
+dealerScore = 12
+SmallHand(handScore, dealerScore)
+// returns "H"

@@ -1,0 +1,36 @@
+Istruzioni
+In questo esercizio elaborerai righe di log.
+Ogni riga di registro è una stringa formattata come segue: "[<LEVEL>]: <MESSAGE>".
+Esistono tre diversi livelli di registro:
+
+-INFO
+-WARNING
+-ERROR
+Hai tre compiti, ognuno dei quali prenderà una riga di registro e ti chiederà di fare qualcosa con esso.
+
+---------------------------------.1.---------------------------------
+Ricevi un messaggio da una riga di registro
+Implementa il metodo ( static ) LogLevels.message()per restituire il messaggio di una riga di log:
+
+LogLevels.message("[ERROR]: Invalid operation")
+// => "Invalid operation"
+
+Eventuali spazi bianchi iniziali o finali devono essere rimossi:
+
+LogLevels.message("[WARNING]:  Disk almost full\r\n")
+// => "Disk almost full"
+
+
+---------------------------------.2.---------------------------------
+Ottenere il livello di registro da una riga di registro
+Implementa il metodo ( static ) LogLevels.logLevel()per restituire il livello di log di una riga di log, che dovrebbe essere restituito in minuscolo:
+
+LogLevels.logLevel("[ERROR]: Invalid operation")
+// => "error"
+
+---------------------------------.3.---------------------------------
+Riformattare una riga di registro
+Implementa il metodo ( statico ) che riformatta la riga di registro, mettendo prima il messaggio e dopo di esso il livello di registro tra parentesi:LogLevels.reformat()
+
+LogLevels.reformat("[INFO]: Operation completed")
+// => "Operation completed (info)"

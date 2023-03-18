@@ -1,0 +1,67 @@
+Istruzioni
+
+In questo esercizio implementerai la logica di ricerca per un nuovo gioco di ruolo che un amico sta sviluppando.
+Il personaggio principale del gioco è Annalyn, una ragazza coraggiosa con un feroce e leale cane da compagnia.
+Sfortunatamente, il disastro colpisce, poiché la sua migliore amica è stata rapita mentre cercava bacche nella foresta.
+Annalyn cercherà di trovare e liberare la sua migliore amica, eventualmente portando con sé il suo cane in questa ricerca.
+
+Dopo un po' di tempo passato a seguire le tracce della sua migliore amica, trova il campo in cui è imprigionata la sua migliore amica.
+Si scopre che ci sono due rapitori: un potente cavaliere e un astuto arciere.
+
+Dopo aver trovato i rapitori, Annalyn considera quale delle seguenti azioni può intraprendere:
+
+1) ATTACCO VELOCE: un attacco veloce può essere effettuato se il cavaliere sta dormendo, poiché ci vuole tempo per indossare la sua armatura, quindi sarà vulnerabile.
+2) SPIA: il gruppo può essere spiato se almeno uno di loro è sveglio. Altrimenti, spiare è una perdita di tempo.
+3) PRIGIONIERO DI SEGNALAZIONE: il prigioniero può essere segnalato utilizzando i suoni degli uccelli se il prigioniero è sveglio e l'arciere sta dormendo, poiché gli arcieri sono addestrati alla segnalazione degli uccelli, in modo che possano intercettare il messaggio.
+4) PRIGIONIERO LIBERO: Annalyn può tentare di intrufolarsi nel campo per liberare il prigioniero.
+Questa è una cosa rischiosa da fare e può avere successo solo in due modi:
+Se Annalyn HA CON SE IL SUO CANE, può salvare il prigioniero se l'arciere dorme.
+Il cavaliere ha paura del cane e l'arciere non avrà il tempo di prepararsi prima che Annalyn e il prigioniero possano scappare.
+Se Annalyn NON HA CON SE IL SUO CANE, allora lei e il prigioniero devono essere molto subdoli!
+Annalyn può liberare il prigioniero se il prigioniero è sveglio e il cavaliere e l'arciere dormono entrambi, ma se il prigioniero sta dormendo non possono essere salvati: il prigioniero verrebbe sorpreso dall'improvvisa apparizione di Annalyn e risveglierebbe il cavaliere e l'arciere.
+
+Hai quattro compiti: implementare la logica per determinare se le azioni di cui sopra sono disponibili in base allo stato dei tre personaggi trovati nella foresta e se il cane di Annalyn è presente o meno.
+
+---------------------------------.1.---------------------------------
+Controlla se è possibile effettuare un attacco rapido.
+Implementa il metodo ( statico ) AnnalynsInfiltration.canFastAttack() che accetta un valore booleano che indica se il cavaliere è sveglio.
+Questo metodo ritorna truese è possibile effettuare un attacco rapido in base allo stato del cavaliere. In caso contrario, restituisce false:
+
+boolean knightIsAwake = true;
+AnnalynsInfiltration.canFastAttack(knightIsAwake);
+// => false
+
+---------------------------------.2.---------------------------------
+Controlla se il gruppo può essere spiato
+Implementa il metodo ( statico ) AnnalynsInfiltration.canSpy() che accetta tre valori booleani, indicando se rispettivamente il cavaliere, l'arciere e il prigioniero sono svegli.
+Il metodo restituisce truese il gruppo è spiabile, in base allo stato dei tre personaggi. In caso contrario, restituisce false:
+
+boolean knightIsAwake = false;
+boolean archerIsAwake = true;
+boolean prisonerIsAwake = false;
+AnnalynsInfiltration.canSpy(knightIsAwake, archerIsAwake, prisonerIsAwake);
+// => true
+
+---------------------------------.3.---------------------------------
+Verificare se il detenuto può essere segnalato
+Implementa il metodo ( statico ) AnnalynsInfiltration.canSignalPrisoner() che accetta due valori booleani, indicando se rispettivamente l'arciere e il prigioniero sono svegli.
+Il metodo restituisce truese il prigioniero può essere segnalato, in base allo stato dei due personaggi. In caso contrario, restituisce false:
+
+boolean archerIsAwake = false;
+boolean prisonerIsAwake = true;
+AnnalynsInfiltration.canSignalPrisoner(archerIsAwake, prisonerIsAwake);
+// => true
+
+---------------------------------.4.---------------------------------
+Controlla se il prigioniero può essere liberato
+Implementa il metodo ( statico ) AnnalynsInfiltration.canFreePrisoner() che accetta quattro valori booleani.
+I primi tre parametri indicano se rispettivamente il cavaliere, l'arciere e il prigioniero sono svegli.
+L'ultimo parametro indica se è presente il cane di Annalyn.
+Il metodo ritorna truese il prigioniero può essere liberato in base allo stato dei tre personaggi e alla presenza del cane da compagnia di Annalyn. Altrimenti restituisce false:
+
+boolean knightIsAwake = false;
+boolean archerIsAwake = true;
+boolean prisonerIsAwake = false;
+boolean petDogIsPresent = false;
+AnnalynsInfiltration.canFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent);
+// => false
