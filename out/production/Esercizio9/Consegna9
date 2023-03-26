@@ -1,0 +1,61 @@
+Istruzioni
+
+Sei un appassionato osservatore di uccelli che tiene traccia di quanti uccelli hanno visitato il tuo giardino negli ultimi sette giorni.
+Hai sei compiti, tutti relativi al numero di uccelli che hanno visitato il tuo giardino.
+
+---------------------------------.1.---------------------------------
+Controlla quali erano i conteggi della scorsa settimana.
+A scopo di confronto, tieni sempre vicino una copia dei conteggi della settimana scorsa, che erano: 0, 2, 5, 3, 7, 8 e 4.
+Implementa il BirdWatcher.getLastWeek() metodo che restituisce i conteggi della settimana scorsa:
+
+BirdWatcher.getLastWeek();
+// => [0, 2, 5, 3, 7, 8, 4]
+
+---------------------------------.2.---------------------------------
+Controlla quanti uccelli hanno visitato oggi.
+Implementa il BirdWatcher.getToday() metodo per restituire quanti uccelli hanno visitato il tuo giardino oggi.
+I conteggi degli uccelli sono ordinati per giorno, con il primo elemento che rappresenta il conteggio del giorno più vecchio e l'ultimo elemento che rappresenta il conteggio di oggi.
+
+int[] birdsPerDay = { 2, 5, 0, 7, 4, 1 };
+BirdWatcher birdCount = new BirdWatcher(birdsPerDay);
+birdCount.getToday();
+// => 1
+
+---------------------------------.3.---------------------------------
+Incrementa il conteggio di oggi.
+Implementa il BirdWatcher.incrementTodaysCount() metodo per incrementare il conteggio di oggi:
+
+int[] birdsPerDay = { 2, 5, 0, 7, 4, 1 };
+BirdWatcher birdCount = new BirdWatcher(birdsPerDay);
+birdCount.incrementTodaysCount();
+birdCount.getToday();
+// => 2
+
+---------------------------------.4.---------------------------------
+Controlla se c'è stato un giorno senza uccelli in visita.
+Implementa il BirdWatcher.hasDayWithoutBirds() metodo che restituisce true se c'è stato un giorno in cui zero uccelli hanno visitato il giardino; altrimenti, restituisci false:
+
+int[] birdsPerDay = { 2, 5, 0, 7, 4, 1 };
+BirdWatcher birdCount = new BirdWatcher(birdsPerDay);
+birdCount.hasDayWithoutBirds();
+// => true
+
+---------------------------------.5.---------------------------------
+Calcolare il numero di uccelli in visita per il primo numero di giorni.
+Implementa il BirdWatcher.getCountForFirstDays() metodo che restituisce il numero di uccelli che hanno visitato il tuo giardino dall'inizio della settimana, ma limita il conteggio al numero specificato di giorni dall'inizio della settimana.
+
+int[] birdsPerDay = { 2, 5, 0, 7, 4, 1 };
+BirdWatcher birdCount = new BirdWatcher(birdsPerDay);
+birdCount.getCountForFirstDays(4);
+// => 14
+
+---------------------------------.6.---------------------------------
+Calcola il numero di giorni occupati.
+Alcuni giorni sono più impegnativi di altri.
+Una giornata intensa è quella in cui cinque o più uccelli hanno visitato il tuo giardino.
+Implementare il BirdWatcher.getBusyDays() metodo per restituire il numero di giorni occupati:
+
+int[] birdsPerDay = { 2, 5, 0, 7, 4, 1 };
+BirdWatcher birdCount = new BirdWatcher(birdsPerDay);
+birdCount.getBusyDays();
+// => 2

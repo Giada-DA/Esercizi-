@@ -4,12 +4,17 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Esercizi-.iml" filepath="$PROJECT_DIR$/.idea/Esercizi-.iml" />
       <module fileurl="file://$PROJECT_DIR$/Esercizi/Esercizio1.iml" filepath="$PROJECT_DIR$/Esercizi/Esercizio1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Esercizio10/Esercizio10.iml" filepath="$PROJECT_DIR$/Esercizio10/Esercizio10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Esercizio11/Esercizio11.iml" filepath="$PROJECT_DIR$/Esercizio11/Esercizio11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Esercizio12/Esercizio12.iml" filepath="$PROJECT_DIR$/Esercizio12/Esercizio12.iml" />
       <module fileurl="file://$PROJECT_DIR$/Esercizio2/Esercizio2.iml" filepath="$PROJECT_DIR$/Esercizio2/Esercizio2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Esercizio3/Esercizio3.iml" filepath="$PROJECT_DIR$/Esercizio3/Esercizio3.iml" />
       <module fileurl="file://$PROJECT_DIR$/Esercizio4/Esercizio4.iml" filepath="$PROJECT_DIR$/Esercizio4/Esercizio4.iml" />
       <module fileurl="file://$PROJECT_DIR$/Esercizio5/Esercizio5.iml" filepath="$PROJECT_DIR$/Esercizio5/Esercizio5.iml" />
       <module fileurl="file://$PROJECT_DIR$/Esercizio6/Esercizio6.iml" filepath="$PROJECT_DIR$/Esercizio6/Esercizio6.iml" />
       <module fileurl="file://$PROJECT_DIR$/Esercizio7/Esercizio7.iml" filepath="$PROJECT_DIR$/Esercizio7/Esercizio7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Esercizio8/Esercizio8.iml" filepath="$PROJECT_DIR$/Esercizio8/Esercizio8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Esercizio9/Esercizio9.iml" filepath="$PROJECT_DIR$/Esercizio9/Esercizio9.iml" />
     </modules>
   </component>
 </project>

@@ -1,4 +1,4 @@
-public class Start {
+public class Start6 {
     public static void main(String[] args) {
         AnnalynsInfiltration anna = new AnnalynsInfiltration();
 

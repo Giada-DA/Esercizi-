@@ -1,4 +1,4 @@
-public class Start {
+public class Start1 {
     public static void main(String[] args) {
         Lasagna lasagna = new Lasagna();
 

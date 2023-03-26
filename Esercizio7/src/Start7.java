@@ -1,11 +1,11 @@
-public class Start {
+public class Start7 {
     public static void main(String[] args) {
         Blackjack gioco = new Blackjack();
 
         System.out.println("Valore della carta: " + gioco.parseCard("five"));
 
         System.out.println("La somma delle carte fa BalckJack? " + gioco.isBlackjack("ace", "ten"));
-        //System.out.println("La somma delle carte fa BalckJack? " + gioco.isBlackjack("ace", "two"));
+        System.out.println("La somma delle carte fa BalckJack? " + gioco.isBlackjack("ace", "two"));
 
         System.out.println("Mano superiore a 20 punti, che risultato avrò? " + gioco.firstTurn("ace", "jack", "two"));
 

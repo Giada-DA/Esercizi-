@@ -1,0 +1,32 @@
+Istruzioni
+Se vuoi costruire qualcosa usando un Raspberry Pi, probabilmente utilizzerai i resistori.
+Per questo esercizio, devi sapere due cose su di loro:
+
+-Ogni resistore ha un valore di resistenza.
+-I resistori sono piccoli, così piccoli che se stampassi il valore della resistenza su di essi, sarebbe difficile da leggere.
+
+Per aggirare questo problema, i produttori stampano bande con codice colore sui resistori per indicare i loro valori di resistenza.
+Ogni banda ha una posizione e un valore numerico.
+
+Le prime 2 bande di un resistore hanno un semplice schema di codifica: ogni colore è mappato su un singolo numero.
+
+In questo esercizio creerai un programma utile in modo da non dover ricordare i valori delle bande.
+
+Questi colori sono codificati come segue:
+
+Colore         Valore
+Nero:            0
+Marrone:         1
+Rosso:           2
+Arancione:       3
+Giallo:          4
+Verde:           5
+Blu:             6
+Viola:           7
+Grigio:          8
+Bianco:          9
+L'obiettivo di questo esercizio è creare un modo:
+
+per cercare il valore numerico associato a una particolare banda di colore
+per elencare i diversi colori delle bande
+I mnemonici mappano i colori sui numeri, che, se archiviati come un array, si associano al loro indice nell'array: Better Be Right or Your Great Big Values ​​Go Wrong.

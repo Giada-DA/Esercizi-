@@ -1,0 +1,17 @@
+Istruzioni
+
+
+Determina se una parola o una frase è un isogramma.
+Un isogramma (noto anche come "parola non modello") è una parola o una frase senza una lettera ripetuta,
+tuttavia gli spazi e i trattini possono apparire più volte.
+
+Esempi di isogrammi:
+
+cane
+scuola
+auto
+aiuole
+yogurt
+
+
+La parola isogrammi , però, non è un isogramma, perché la "m" si ripete.

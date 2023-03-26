@@ -1,4 +1,4 @@
-public class Start {
+public class Start4 {
     public static void main(String[] args) {
         MicroBlog microBlog = new MicroBlog();
         System.out.println(microBlog.truncate("Facile"));

@@ -1,0 +1,43 @@
+Istruzioni
+In questo esercizio implementerai un set parziale di routine di utilità per aiutare uno sviluppatore a ripulire i nomi SqueakyClean.
+Nei 4 compiti costruirai gradualmente il clean metodo.
+Un nome SqueakyClean valido è composto da zero o più lettere e trattini bassi.
+
+In tutti i casi la stringa di input è garantita come non nulla.
+Si noti che il clean metodo dovrebbe considerare valida una stringa vuota.
+
+---------------------------------.1.---------------------------------
+Sostituire eventuali spazi incontrati con caratteri di sottolineatura.
+Implementa il metodo ( statico ) SqueakyClean.clean() per sostituire eventuali spazi con caratteri di sottolineatura.
+Questo vale anche per gli spazi iniziali e finali.
+
+SqueakyClean.clean("my   Id");
+// => "my___Id"
+
+---------------------------------.2.---------------------------------
+Sostituisci i caratteri di controllo con la stringa maiuscola "CTRL".
+Modificare il metodo ( statico ) SqueakyClean.clean() per sostituire i caratteri di controllo con la stringa maiuscola "CTRL".
+
+SqueakyClean.clean("my\0Id");
+// => "myCTRLId"
+
+---------------------------------.3.---------------------------------
+Converti kebab-case in camelCase.
+Modifica il metodo ( statico ) SqueakyClean.clean() per convertire kebab-case in camelCase.
+
+SqueakyClean.clean("à-ḃç");
+// => "àḂç"
+
+---------------------------------.4.---------------------------------
+Omettere i caratteri che non sono lettere.
+Modificare il metodo ( static ) SqueakyClean.clean() per omettere tutti i caratteri che non sono lettere.
+
+SqueakyClean.clean("a1😀2😀3😀b");
+// => "ab"
+
+---------------------------------.5.---------------------------------
+Ometti le lettere minuscole greche.
+Modifica il metodo ( statico ) SqueakyClean.clean() per omettere qualsiasi lettera greca nell'intervallo da 'α' a 'ω'.
+
+SqueakyClean.clean("MyΟβιεγτFinder");
+// => "MyΟFinder"
